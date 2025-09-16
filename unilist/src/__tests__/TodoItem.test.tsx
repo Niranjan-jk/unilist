@@ -37,7 +37,7 @@ describe('TodoItem', () => {
       />
     );
 
-    const deleteButton = screen.getByRole('button', { name: '' });
+    const deleteButton = screen.getByRole('button', { name: 'Delete' });
     fireEvent.click(deleteButton);
 
     expect(mockDelete).toHaveBeenCalledWith('1');

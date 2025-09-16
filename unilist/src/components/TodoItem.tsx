@@ -88,6 +88,7 @@ const TodoItem = ({ todo, onUpdateStatus, onDelete }: TodoItemProps) => {
               <button
                 onClick={() => onDelete(todo.id)}
                 className="p-1 text-pink-200 hover:text-white hover:bg-pink-500 hover:bg-opacity-30 rounded transition"
+                aria-label="Delete"
               >
                 <Trash2 size={16} />
               </button>

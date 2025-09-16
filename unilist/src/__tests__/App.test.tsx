@@ -55,7 +55,7 @@ describe('App', () => {
     fireEvent.change(select, { target: { value: 'ongoing' } });
     
     // Check that the todo is in the ongoing column
-    const ongoingColumn = screen.getByText('Ongoing');
+    const ongoingColumn = screen.getByRole('heading', { name: /Ongoing/ });
     expect(ongoingColumn).toBeInTheDocument();
   });
 });
