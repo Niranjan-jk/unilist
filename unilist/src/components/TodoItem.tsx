@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Todo, Status } from '../types';
+import type { Todo, Status } from '../types';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Edit, Trash2 } from 'lucide-react';

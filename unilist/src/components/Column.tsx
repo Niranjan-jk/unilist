@@ -1,4 +1,4 @@
-import { Todo, Status, Column as ColumnType } from '../types';
+import type { Todo, Status, Column as ColumnType } from '../types';
 import TodoItem from './TodoItem';
 import { useDroppable } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';

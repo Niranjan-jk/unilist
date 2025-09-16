@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { Todo, Status } from './types';
+import type { Todo, Status } from './types';
 import { v4 as uuidv4 } from 'uuid';
 import Column from './components/Column';
 import AddTodoForm from './components/AddTodoForm';
 import SearchBar from './components/SearchBar';
-import { DndContext, DragEndEvent } from '@dnd-kit/core';
+import { DndContext } from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core';
 import { SortableContext, horizontalListSortingStrategy } from '@dnd-kit/sortable';
 
 function App() {
