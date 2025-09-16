@@ -1,4 +1,5 @@
 import { Search } from 'lucide-react';
+import { Input } from "./ui/input";
 
 interface SearchBarProps {
   searchTerm: string;
@@ -11,7 +12,7 @@ const SearchBar = ({ searchTerm, onSearchChange }: SearchBarProps) => {
       <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-pink-200">
         <Search size={20} />
       </div>
-      <input
+      <Input
         type="text"
         value={searchTerm}
         onChange={(e) => onSearchChange(e.target.value)}

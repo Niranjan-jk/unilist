@@ -52,8 +52,13 @@ describe('TodoItem', () => {
       />
     );
 
-    const select = screen.getByRole('combobox');
-    fireEvent.change(select, { target: { value: 'completed' } });
+    // Open the select dropdown
+    const selectTrigger = screen.getByRole('combobox');
+    fireEvent.click(selectTrigger);
+
+    // Select the "Completed" option
+    const completedOption = screen.getByText('Completed');
+    fireEvent.click(completedOption);
 
     expect(mockUpdateStatus).toHaveBeenCalledWith('1', 'completed');
   });
